@@ -1,0 +1,48 @@
+body {
+    background: black;
+    padding: 3px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.pad {
+    background-color: black;
+}
+  
+.full {
+    width: 100%; 
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.btn-short {
+    width: 82px;
+    height: 100px;
+    margin-right: 5px;
+}
+
+.icon-orange-folder {
+  background-image : url(../icons/orange-folder.png);
+  background-size: cover;
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+}
+
+.icon-terminal {
+  background-image : url(../icons/terminal.png);
+  background-size: cover;
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+}
+
+.icon-paste {
+  background-image : url(../icons/paste.png);
+  background-size: cover;
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+}
