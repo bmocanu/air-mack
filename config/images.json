@@ -1,0 +1,12 @@
+{
+    "images": [
+        {
+            "id": "orange-folder",
+            "location": "images/orange-folder.png"
+        },
+        {
+            "id": "terminal",
+            "location": "images/terminal.png"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "commands": [
+        {
+            "id": "explore-downloads",
+            "actions": [
+                {
+                    "type": "key-press",
+                    "combination": "ctrl+win+f12"
+                }
+            ]
+        },
+        {
+            "id": "open-terminal",
+            "actions": [
+                {
+                    "type": "exec",
+                    "command": "terminal.exe"
+                }
+            ]
+        }
+    ]
+}

@@ -1,40 +1,69 @@
 <html>
-  <head>
+<head>
     <title>MobyDeck</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="row pad">
+</head>
+<body>
+<div class="container">
+    <div class="row pad">
         <button class="btn btn-sm btn-dark btn-short"><i class="icon-orange-folder"></i>Apache htdocs</button>
-      </div>
-      <div class="row pad">
+    </div>
+    <div class="row pad">
         <button class="btn btn-sm btn-dark btn-short"><i class="icon-orange-folder"></i>Apache htdocs</button>
         <button class="btn btn-sm btn-dark btn-short"><i class="icon-orange-folder"></i>Documents</button>
         <button class="btn btn-sm btn-dark btn-short"><i class="icon-orange-folder"></i>Downloads</button>
         <button class="btn btn-sm btn-dark btn-short"><i class="icon-terminal"></i>Terminal</button>
-      </div>
-      <div class="row pad">
+    </div>
+    <div class="row pad">
         <button class="btn btn-sm btn-dark btn-short"><i class="icon-paste"></i>Current date</button>
         <button class="btn btn-sm btn-dark btn-short"><i class="icon-paste"></i>Tunnel FOO</button>
         <button class="btn btn-sm btn-dark btn-short"><i class="icon-paste"></i>Tunnel pass</button>
-        <button class="btn btn-sm btn-dark btn-short"><i class="icon-paste"></i>FOO pass </button>
-      </div>
-      <div class="row pad">
-        <button class="btn btn-lg btn-outline-success col-xs-12"><span class="glyphicon glyphicon-earphone pull-left"></span> Open folder</button>
-      </div>
-      <div class="row pad">
-        <button class="btn btn-lg btn-outline-success col-xs-12"><span class="glyphicon glyphicon-earphone pull-left"></span> Run Maven command</button>
-      </div>
+        <button class="btn btn-sm btn-dark btn-short"><i class="icon-paste"></i>FOO pass</button>
     </div>
+    <div id="jogdial">
 
-    <script src="scripts/nosleep/NoSleep.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script>
-      var noSleep = new NoSleep();
-      noSleep.enable(); // keep the screen on!
-    </script>
-  </body>
+    </div>
+    <div class="row pad">
+        <button class="btn btn-lg btn-outline-success col-xs-12"><span
+                class="glyphicon glyphicon-earphone pull-left"></span> Open folder
+        </button>
+    </div>
+    <div class="row pad">
+        <button class="btn btn-lg btn-outline-success col-xs-12"><span
+                class="glyphicon glyphicon-earphone pull-left"></span> Run Maven command
+        </button>
+    </div>
+</div>
+
+<script src="scripts/nosleep/NoSleep.min.js"></script>
+<script src="scripts/jogdial/jogDial.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+<script>
+    var noSleep = new NoSleep();
+    noSleep.enable(); // keep the screen on!
+    var dial = JogDial(document.getElementById('jogdial',{
+        debug : false,
+        touchMode : 'knob',  // knob | wheel
+        knobSize : '30%',
+        wheelSize : '100%',
+        zIndex : 9999,
+        degreeStartAt : 0,
+        minDegree : null,  // (null) infinity
+        maxDegree : null   // (null) infinity
+    }));
+    // this is not working...
+    // dial.on("mousemove", function(event){
+    //     navigator.vibrate = navigator.vibrate ||
+    //         navigator.webkitVibrate ||
+    //         navigator.mozVibrate ||
+    //         navigator.msVibrate;
+    //     navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100]);
+    // });
+</script>
+</body>
 </html>

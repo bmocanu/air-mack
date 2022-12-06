@@ -1,0 +1,28 @@
+{
+    "panels": [
+        {
+            "id": "root",
+            "rows": [
+                {
+                    "buttons": [
+                        {
+                            "label": "Downloads",
+                            "image": "orange-folder",
+                            "command": "explore-downloads"
+                        },
+                        {
+                            "label": "Projects",
+                            "image": "orange-folder",
+                            "command": "explore-downloads"
+                        },
+                        {
+                            "label": "Terminal",
+                            "image": "terminal",
+                            "command": "open-terminal"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

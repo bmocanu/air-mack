@@ -24,7 +24,7 @@ body {
 }
 
 .icon-orange-folder {
-  background-image : url(../icons/orange-folder.png);
+  background-image : url(/air-mack/images/orange-folder.png);
   background-size: cover;
   display: inline-block;
   height: 48px;
@@ -32,7 +32,7 @@ body {
 }
 
 .icon-terminal {
-  background-image : url(../icons/terminal.png);
+  background-image : url(/air-mack/images/terminal.png);
   background-size: cover;
   display: inline-block;
   height: 48px;
@@ -40,9 +40,25 @@ body {
 }
 
 .icon-paste {
-  background-image : url(../icons/paste.png);
+  background-image : url(/air-mack/images/paste.png);
   background-size: cover;
   display: inline-block;
   height: 48px;
   width: 48px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+#jogdial {
+    width: 260px;
+    height: 260px;
+    margin: 20px auto;
+    background: url('/air-mack/scripts/jogdial/base_one_bg.png');
+    background-repeat: no-repeat;
+}
+
+#jogdial_knob {
+    width: 70px;
+    height: 70px;
+    background: url('/air-mack/scripts/jogdial/base_one_knob.png');
+    background-repeat: no-repeat;
 }
